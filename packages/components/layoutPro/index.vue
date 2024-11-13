@@ -3,8 +3,8 @@
         <div class="el-layout-pro-l" :style="{width:menuWidth+'px'}">
             <div v-if="hearderConfig.isFixed || hearderConfig.title || hearderConfig.image.src">
                 <div class="el-layout-pro-title" :style="{boxShadow:hearderConfig.isFixed?'':'0 0 10px 0 #2255bc1a'}">
-                    <el-image class="el-layout-pro-title-l" v-if="!hearderConfig.isFixed && hearderConfig.image.src" v-bind="hearderConfig.image"></el-image>
-                    <div class="el-layout-pro-title-r" v-if="!hearderConfig.isFixed && hearderConfig.title">{{ hearderConfig.title }}</div>
+                    <el-image :class="'el-layout-pro-title-l '+(collapse?'el-layout-pro-title-collapse-l':'')" v-if="!hearderConfig.isFixed && hearderConfig.image.src" v-bind="hearderConfig.image"></el-image>
+                    <div :class="'el-layout-pro-title-r '+(collapse?'el-layout-pro-title-collapse-r':'')" v-if="!hearderConfig.isFixed && hearderConfig.title">{{ hearderConfig.title }}</div>
                 </div>
             </div>
             <div class="el-layout-pro-lc">
@@ -18,7 +18,7 @@
             <div class="el-layout-pro-rt" v-if="hearderConfig.show">
                 <div class="el-layout-pro-rtl" v-if="hearderConfig.isFixed && (hearderConfig.title || hearderConfig.image.src)"  >
                     <div class="el-layout-pro-title" >
-                        <el-image class="el-layout-pro-title-l" v-if="hearderConfig.image.src" v-bind="hearderConfig.image"></el-image>
+                        <el-image :class="'el-layout-pro-title-l '+(collapse?'el-layout-pro-title-collapse-l':'')" v-if="hearderConfig.image.src" v-bind="hearderConfig.image"></el-image>
                         <div class="el-layout-pro-title-r" v-if="hearderConfig.title">{{ hearderConfig.title }}</div>
                     </div>
                 </div>
