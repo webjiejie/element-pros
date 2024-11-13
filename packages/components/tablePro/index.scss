@@ -1,0 +1,29 @@
+.el-table-pro{
+    &-t{
+        padding: 18px 16px 0 0;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        background-color: #fff;
+    }
+    &-v{
+        padding: 16px;
+        border-radius: 4px;
+        background-color: #fff;
+        &t{
+            text-align: end;
+            margin-bottom: 16px;
+            background-color: #fff;
+        }
+        &f{
+            text-align: end;
+            margin-top: 16px;
+            background-color: #fff;
+        }
+    }
+    .el-table-pro-button+.el-table-pro-button{
+        margin-left: 10px;
+    }
+    .delete:not(.is-disabled){
+        color:#f56c6c;
+    }
+}

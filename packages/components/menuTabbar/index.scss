@@ -1,0 +1,41 @@
+.el-menu-tabbar{
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    &-c{
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        height:100%;
+        width: fit-content;
+        padding-left: 1px;
+        transition: 0.5s;
+    }
+    &-v{
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: calc(100% - 8px);
+        text-align: center;
+        padding:0 10px;
+        margin-right: 2px;
+        box-sizing: border-box;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        font-size: 13px;
+        color: rgb(59, 59, 59);
+        white-space: nowrap;
+        border-width: 1px;
+        border-style: solid;
+        border-bottom:none;
+        box-shadow: 0 0 4px 0 #e4e7ed;
+        cursor: pointer;
+        .el-icon-close{
+            font-size: 12px;
+            margin-left: 5px;
+        }
+        .el-icon-close:hover{
+            color:#409eff;
+        }
+    }
+}
