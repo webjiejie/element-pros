@@ -118,7 +118,7 @@ $height:55px;
             white-space: pre-wrap;
             word-break: break-all;
             overflow: hidden;
-            transition: 0.5s;
+            transition: 0.8s;
             opacity: 1;
             max-height: 100%;
         }
@@ -127,6 +127,8 @@ $height:55px;
                 margin-right: 0;
             }
             &-r{
+                white-space: inherit;
+                word-break: inherit;
                 opacity: 0;
             }
         }

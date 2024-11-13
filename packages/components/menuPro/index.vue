@@ -131,4 +131,15 @@ export default {
     height: 100%;
     border-right: none;
 }
+
+.el-menu-pro.el-menu--collapse >>> .el-submenu > .el-submenu__title span {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+  display: inline-block;
+}
+.el-menu-pro.el-menu--collapse >>> .el-submenu > .el-submenu__title .el-submenu__icon-arrow {
+  display: none;
+}
 </style>

@@ -26,7 +26,7 @@ export default {
                     title:'layoutPro 布局',
                     path: '/layoutPro',
                     renderIcon:()=>{
-                        return <el-image src='https://cyj.lovewenqin.cn/static/favicon.ico' style="width:15px;height:15px;marginRight:5px"></el-image>;
+                        return <el-image src='https://cyj.lovewenqin.cn/static/favicon.ico' style="width:24px;height:18px;paddingLeft:3px"></el-image>;
                     },
                 },
                 {
@@ -58,31 +58,31 @@ export default {
             return {
                 menuList:[
                     {
-                        title:'layoutPro 布局',
-                        path: '/layoutPro',
-                        renderIcon:()=>{
-                            return <el-image src='https://cyj.lovewenqin.cn/static/favicon.ico' style="width:15px;height:15px;marginRight:5px"></el-image>;
+                    title:'layoutPro 布局',
+                    path: '/layoutPro',
+                    renderIcon:()=>{
+                        return <el-image src='https://cyj.lovewenqin.cn/static/favicon.ico' style="width:24px;height:18px;paddingLeft:3px"></el-image>;
+                    },
+                },
+                {
+                    title:'FormPro 表单',
+                    icon:'el-icon-edit',
+                    path: '/form',
+                },
+                {
+                    title:'ModalFrom 弹窗表单',
+                    path: '/modalForm',
+                    children:[
+                        {
+                            title:'子菜单',
+                            path: '/modalForm/index',
                         },
-                    },
-                    {
-                        title:'FormPro 表单',
-                        icon:'el-icon-edit',
-                        path: '/form',
-                    },
-                    {
-                        title:'ModalFrom 弹窗表单',
-                        path: '/modalForm',
-                        children:[
-                            {
-                                title:'子菜单',
-                                path: '/modalForm/index',
-                            },
-                        ]
-                    },
-                    {
-                        title:'TablePro 表格',
-                        path: '/tablePro',
-                    },
+                    ]
+                },
+                {
+                    title:'TablePro 表格',
+                    path: '/tablePro',
+                },
                 ], 
             }
         }

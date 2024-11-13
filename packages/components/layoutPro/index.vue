@@ -7,7 +7,7 @@
                     <div :class="'el-layout-pro-title-r '+(collapse?'el-layout-pro-title-collapse-r':'')" v-if="!hearderConfig.isFixed && hearderConfig.title">{{ hearderConfig.title }}</div>
                 </div>
             </div>
-            <div class="el-layout-pro-lc">
+            <div  :class="'el-layout-pro-lc '+(collapse?'el-layout-pro-lc-collapse':'')">
                 <el-menu-pro :menuList="menuList" :routerBase="routerBase" :fieldNames="menuConfig.fieldNames||{}" :props="{collapse,...(menuConfig.props||{})}" @change="menuChange"/>
             </div>
             <div class="el-layout-pro-li" @click="showFn" v-if="menuConfig.collapseShow">
@@ -19,7 +19,7 @@
                 <div class="el-layout-pro-rtl" v-if="hearderConfig.isFixed && (hearderConfig.title || hearderConfig.image.src)"  >
                     <div class="el-layout-pro-title" >
                         <el-image :class="'el-layout-pro-title-l '+(collapse?'el-layout-pro-title-collapse-l':'')" v-if="hearderConfig.image.src" v-bind="hearderConfig.image"></el-image>
-                        <div class="el-layout-pro-title-r" v-if="hearderConfig.title">{{ hearderConfig.title }}</div>
+                        <div :class="'el-layout-pro-title-r '+(collapse?'el-layout-pro-title-collapse-r':'')" v-if="hearderConfig.title">{{ hearderConfig.title }}</div>
                     </div>
                 </div>
                 <div class="el-layout-pro-rtr" :style="{maxWidth:hearderConfig.isFixed?`calc(100% - ${menuWidth}px)`:''}">

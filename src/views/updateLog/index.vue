@@ -64,6 +64,17 @@ export default{
                         }
                     ]
                 },
+                {
+                    version:'1.8.4',
+                    time:'2024-11-13',
+                    type:'Bug 修复',
+                    list:[
+                        {
+                            title:'menuPro菜单',
+                            remark:'修复菜单样式问题',
+                        }
+                    ]
+                },
             ]
         }
     }

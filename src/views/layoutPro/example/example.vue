@@ -23,7 +23,7 @@ export default {
                     title:'layoutPro 布局',
                     path: '/layoutPro',
                     renderIcon:()=>{
-                        return <el-image src='https://cyj.lovewenqin.cn/static/favicon.ico' style="width:15px;height:15px;marginRight:5px"></el-image>;
+                        return <el-image src='https://cyj.lovewenqin.cn/static/favicon.ico' style="width:24px;height:18px;paddingLeft:3px"></el-image>;
                     },
                 },
                 {
@@ -81,27 +81,27 @@ export default {
                     title:'layoutPro 布局',
                     path: '/layoutPro',
                     renderIcon:()=>{
-                        return <el-image src='https://cyj.lovewenqin.cn/static/favicon.ico' style="width:15px;height:15px;marginRight:5px"></el-image>;
+                        return <el-image src='https://cyj.lovewenqin.cn/static/favicon.ico' style="width:24px;height:18px;paddingLeft:3px"></el-image>;
                     },
                 },
                 {
-                    title:'Form 表单',
+                    title:'FormPro 表单',
                     icon:'el-icon-edit',
-                    path: '/form',
+                    path: '/formDemo',
                 },
                 {
                     title:'ModalFrom 弹窗表单',
-                    path: '/modalForm',
+                    path: '/modalFormDemo',
                     children:[
                         {
                             title:'子菜单',
-                            path: '/modalForm/index',
+                            path: '/modalForm/indexDemo',
                         },
                     ]
                 },
                 {
                     title:'TablePro 表格',
-                    path: '/tablePro',
+                    path: '/tableProDemo',
                 },
             ],
             hearderProps:{ // 顶部hearder的参数配置
